@@ -9,7 +9,7 @@ services:
             - '15000:15000/udp'
             - '15777:15777/udp'
         volumes:
-            - '/satisfac'
+            - './satisfac:/config'
         environment:
             - MAXPLAYERS=5
         restart: unless-stopped
